@@ -1,0 +1,88 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2479F6;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.hamburger {
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    height: 2.5rem;
+    position: relative;
+    z-index: 10000;
+}
+
+.navbar.is-open {
+    transform: translateX(0);
+}
+
+.nav-link-home {
+    color: #7ABAFF;
+    text-decoration: none;
+    position: absolute;
+    top: 74px;
+}
+.home{
+    top: 74px;
+    left: 56px;
+    position: absolute;
+    width: 1.5rem;
+}
+.nav-link-employee {
+    color: #7ABAFF;
+    text-decoration: none;
+    top: 9rem;
+    position: absolute;
+}
+.user{
+    width: 1.5rem;
+    left: 3.5rem;
+    top: 9rem;
+    position: absolute;
+}
+.nav-link-contact {
+    color: #7ABAFF;
+    text-decoration: none;
+    position: absolute;
+    top: 30rem;
+}
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.content.is-open {
+    margin-left: 0;
+}
+ .navbar-nav{
+    display: flex;
+    align-items: center;
+    margin: 5.6rem;
+}
+.navbar.is-closed {
+    transform: translateX(-250px);
+}
+.content.is-closed {
+    margin-left: 0;
+}
+.nav-link-contact:hover{
+    color: #282C34;
+}
+.nav-link-home:hover{
+    color: #282C34;
+}
+.nav-link-employee:hover{
+    color: #282C34;
+}
+.icon{
+    width: 1.5rem;
+    left: 63px;
+    position: absolute;
+    top: 30rem;
+}
