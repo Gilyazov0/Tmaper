@@ -1,0 +1,19 @@
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1;
+    background-color: #04aa6d;
+}
+
+.survey-form{
+  max-width: 600px;
+}
