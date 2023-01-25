@@ -3,6 +3,7 @@
   border-radius: 8px;
   display: inline-block;
   border: 5px solid red;
+  margin: 5px;
 }
 
 .backImg {

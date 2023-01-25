@@ -11,8 +11,8 @@ const Person = ({ data, setData }) => {
       onClick={handleClick}
       style={{ borderColor: data.employeeColor }}
     >
-      <div>{`Name: ${data.employeeName}`}</div>
-      <div>{`Positions: ${data.position}`}</div>
+      <div className="position">{`${data.position}`}</div>
+      <div>{`${data.employeeName}`}</div>
     </div>
   );
 };
