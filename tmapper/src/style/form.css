@@ -13,3 +13,7 @@
   opacity: 1;
     background-color: #04aa6d;
 }
+
+.survey-form{
+  max-width: 600px;
+}

@@ -1,9 +1,17 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import RangeSlider from "react-bootstrap-range-slider";
+import { UseFormContext } from "./FormContext";
 
+function Slider({ question }) {
+  const { answer, setAnswer } = UseFormContext();
+  const [value, setValue] = useState(0);
 
-function Slider() {
-    const [value, setValue] = useState(0);
+  const handleChange = (changeEvent) => {
+    setValue(changeEvent.target.value);
+  };
+  const lockValue = () => {
+    setAnswer({ ...answer, [question]: value });
+  };
 
   return (
     <div>
@@ -12,7 +20,8 @@ function Slider() {
         min={0}
         max={10}
         step={1}
-        onChange={(changeEvent) => setValue(changeEvent.target.value)}
+        onChange={handleChange}
+        onAfterChange={lockValue}
       />
     </div>
   );
