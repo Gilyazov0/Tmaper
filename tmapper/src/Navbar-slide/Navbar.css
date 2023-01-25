@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Rubik:ital,wght@1,500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
 .navbar {
     position: absolute;
     top: 0;
     left: 0;
-    width: 230px;
+    width: 250px;
     height: 100%;
-    background-color: #2479F6;
+    background-color: #2084F7;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
 }
 
 .hamburger {
     top: 1rem;
-    left: 1rem;
+    left: 4rem;
     cursor: pointer;
     height: 2.5rem;
     position: relative;

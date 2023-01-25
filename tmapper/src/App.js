@@ -8,16 +8,15 @@ import FormContextProvider from "./Components/FormContext";
 import { ToastContainer } from "react-toastify";
 
 function App() {
-
   return (
     <BrowserRouter>
-    <div className="App">
-      <Navbar />
-      <div>
-        <CompanyStructure />
-      </div>
-      <ToastContainer></ToastContainer>
-      <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <div>
+          <CompanyStructure />
+        </div>
+        <ToastContainer></ToastContainer>
+
         <Routes>
           <Route
             path="/form"
@@ -28,8 +27,7 @@ function App() {
             }
           ></Route>
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
     </BrowserRouter>
   );
 }
