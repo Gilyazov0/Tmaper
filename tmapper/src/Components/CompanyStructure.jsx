@@ -1,39 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tree } from "react-organizational-chart";
 import Node from "./Node";
-const data = {
+const mockData = {
   id: "some id",
   color: "color that represent culture",
-  name: "some name",
+  name: "name0",
   position: "position",
-  other: "and other data about person if we have it in dataset",
 
   subordinates: [
     {
       id: "some id",
       color: "color that represent culture",
-      name: "some name",
+      name: "name1",
       position: "position",
-      other: "and other data about person if we have it in dataset",
       subordinates: [
-        /*subordinates of this person*/
+        {
+          id: "some id",
+          color: "color that represent culture",
+          name: "name2",
+          position: "position",
+        },
+        {
+          id: "some id",
+          color: "color that represent culture",
+          name: "name3",
+          position: "position",
+        },
       ],
     },
   ],
 };
 
 const CompanyStructure = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    setData(mockData);
+  }, []);
+
   return (
-    <Tree
-      lineWidth={"2px"}
-      lineColor={"green"}
-      lineBorderRadius={"10px"}
-      label={<div className="node">{`${data.name}`}</div>}
-    >
-      {data.children.map((v, i) => (
-        <Node data={v} key={i} />
-      ))}
-    </Tree>
+    <>
+      {data && (
+        <Tree
+          lineWidth={"2px"}
+          lineColor={"green"}
+          lineBorderRadius={"10px"}
+          label={<div className="node">{`${data.name}`}</div>}
+        >
+          {data.subordinates &&
+            data.subordinates.map((v, i) => (
+              <Node data={v} setData={setData} key={i} />
+            ))}
+        </Tree>
+      )}
+    </>
   );
 };
 
