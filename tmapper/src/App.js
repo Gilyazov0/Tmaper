@@ -1,16 +1,16 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CompanyStructure from "./Components/CompanyStructure";
 import Survey from "./Components/Survey";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <Routes>
           <Route path="/form" element={<Survey/>}></Route>
         </Routes>
-      </Router>
-      <CompanyStructure />
+      </BrowserRouter>
+      {/* <CompanyStructure /> */}
     </div>
   );
 }
