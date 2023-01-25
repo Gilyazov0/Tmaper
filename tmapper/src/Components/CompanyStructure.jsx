@@ -51,4 +51,4 @@ const CompanyStructure = () => {
   );
 };
 
-// export default CompanyStructure;
+export default CompanyStructure;
