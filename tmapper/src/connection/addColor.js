@@ -12,8 +12,8 @@ function getColor(color) {
 }
 
 export default function addColors(structure, colors) {
-  const color = colors[structure.employeeId] ? colors[structure.employeeId] : 0;
-  structure.employeeColor = getColor(color);
+  const color = colors[structure.employeeId] ? colors[structure.employeeId] : 1;
+  //   structure.employeeColor = getColor(color);
   for (const person of structure.subordinates) {
     addColors(person, color);
   }
