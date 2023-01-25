@@ -11,7 +11,6 @@ const CompanyStructure = () => {
   const [clustersNum, setClustersNum] = useState(3);
 
   const getCompanyStructure = useCallback(async () => {
-    console.log("clustersNum", clustersNum);
     const data = await getCompanyData(clustersNum);
     setRootId(data.structure.employeeId);
     const newData = { ...data.structure };
@@ -21,8 +20,6 @@ const CompanyStructure = () => {
 
   useEffect(() => {
     getCompanyStructure();
-
-    console.log("useEffect", clustersNum);
   }, [getCompanyStructure, clustersNum]);
 
   function resetData() {
