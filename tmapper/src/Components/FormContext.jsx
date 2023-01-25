@@ -59,13 +59,7 @@ export default function FormContextProvider({ children }) {
     "Being competitive":"0",
     "Being highly organised":"0",
   });
-  useEffect(() => {
-    console.log(answer);
-  }, [answer]);
-
-  useEffect(() => {
-    console.log(connectedPerson);
-  }, [connectedPerson]);
+  
   return (
     <FormContext.Provider
       value={{ answer, setAnswer, connectedPerson, setConnectedPerson }}

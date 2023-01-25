@@ -8,14 +8,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function SurveyQuestion() {
-  const { answer, setAnswer } = UseFormContext();
+  const { answer, setAnswer, connectedPerson } = UseFormContext();
   const [currentTab, setCurrentTab] = useState(0);
   let id = 1;
   const showTab = (currentTab) => {
-    console.log("called func", currentTab);
   };
   useEffect(() => {
-    console.log("called", currentTab);
     if (Number.isInteger(currentTab)) {
       showTab(currentTab);
     } else {
@@ -88,7 +86,8 @@ function SurveyQuestion() {
   ];
 
   const handleSubmit = () => {
-    toast.success("Submitted!")
+    console.log(answer, connectedPerson)
+    toast.success("Submitted successfully!")
   }
 
   const handleNextPage = (e) => {
