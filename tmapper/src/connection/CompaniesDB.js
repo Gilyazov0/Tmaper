@@ -1,6 +1,6 @@
 export const companiesData = {
    companyId: 1,
-   companyName: "DEMOinc",
+   companyName: "DemoCompany",
 
    structure: {
       employeeId: 1030,
