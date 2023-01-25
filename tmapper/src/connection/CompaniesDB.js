@@ -25,7 +25,7 @@ export const companiesData = {
                   employeeName: "Fred Randolph",
                   position: "CAPTAIN",
                   other: null,
-                  department: 1,
+                  department: "1A",
                   subordinates: [
                      {
                         employeeId: 1001,
@@ -42,7 +42,7 @@ export const companiesData = {
                         employeeName: "Olivia Perry",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 1,
+                        department: "1A",
                         subordinates: [],
                      },
                      {
@@ -51,7 +51,7 @@ export const companiesData = {
                         employeeName: "Zayd Porter",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 1,
+                        department: "1A",
                         subordinates: [],
                      },
                      {
@@ -60,7 +60,7 @@ export const companiesData = {
                         employeeName: "Isobel Booker",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 1,
+                        department: "1A",
                         subordinates: [],
                      },
                      {
@@ -69,7 +69,7 @@ export const companiesData = {
                         employeeName: "Bilal Douglas",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 1,
+                        department: "1A",
                         subordinates: [],
                      },
 
@@ -79,7 +79,7 @@ export const companiesData = {
                         employeeName: "Olivia Perry",
                         position: "DRIVER",
                         other: null,
-                        department: 1,
+                        department: "1A",
                         subordinates: [],
                      },
                      {
@@ -88,7 +88,7 @@ export const companiesData = {
                         employeeName: "Olivia Perry",
                         position: "DRIVER",
                         other: null,
-                        department: 1,
+                        department: "1A",
                         subordinates: [],
                      },
                   ],
@@ -99,7 +99,7 @@ export const companiesData = {
                   employeeName: "Ammar Gillespie",
                   position: "CAPTAIN",
                   other: null,
-                  department: 1,
+                  department: "1B",
                   subordinates: [
                      {
                         employeeId: 1023,
@@ -107,7 +107,7 @@ export const companiesData = {
                         employeeName: "Hiba Beck",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 1,
+                        department: "1B",
                         subordinates: [],
                      },
                      {
@@ -116,7 +116,7 @@ export const companiesData = {
                         employeeName: "Margaret Hudson",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 1,
+                        department: "1B",
                         subordinates: [],
                      },
                      {
@@ -125,7 +125,7 @@ export const companiesData = {
                         employeeName: "Juanita Lane",
                         position: "DRIVER",
                         other: null,
-                        department: 1,
+                        department: "1B",
                         subordinates: [],
                      },
                      {
@@ -134,7 +134,7 @@ export const companiesData = {
                         employeeName: "Bradley Savage",
                         position: "DRIVER",
                         other: null,
-                        department: 1,
+                        department: "1B",
                         subordinates: [],
                      },
                      {
@@ -143,7 +143,7 @@ export const companiesData = {
                         employeeName: "Anastasia Acosta",
                         position: "DRIVER",
                         other: null,
-                        department: 1,
+                        department: "1B",
                         subordinates: [],
                      },
                   ],
@@ -164,7 +164,7 @@ export const companiesData = {
                   employeeName: "Lulu Hatfield",
                   position: "CAPTAIN",
                   other: null,
-                  department: 2,
+                  department: "2A",
                   subordinates: [
                      {
                         employeeId: 1011,
@@ -172,7 +172,7 @@ export const companiesData = {
                         employeeName: "Cody Myers",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 2,
+                        department: "2A",
                         subordinates: [],
                      },
                      {
@@ -181,7 +181,7 @@ export const companiesData = {
                         employeeName: "Juliet Reed",
                         position: "DRIVER",
                         other: null,
-                        department: 2,
+                        department: "2A",
                         subordinates: [],
                      },
                      {
@@ -190,7 +190,7 @@ export const companiesData = {
                         employeeName: "Jermaine Mack",
                         position: "DRIVER",
                         other: null,
-                        department: 2,
+                        department: "2A",
                         subordinates: [],
                      },
                      {
@@ -199,7 +199,7 @@ export const companiesData = {
                         employeeName: "Linda Bentley",
                         position: "DRIVER",
                         other: null,
-                        department: 2,
+                        department: "2A",
                         subordinates: [],
                      },
                   ],
@@ -220,7 +220,7 @@ export const companiesData = {
                   employeeName: "Benedict Browning",
                   position: "CAPTAIN",
                   other: null,
-                  department: 3,
+                  department: "3A",
                   subordinates: [
                      {
                         employeeId: 1042,
@@ -228,7 +228,7 @@ export const companiesData = {
                         employeeName: "Erika Graham",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 3,
+                        department: "3A",
                         subordinates: [],
                      },
                      {
@@ -237,7 +237,7 @@ export const companiesData = {
                         employeeName: "Betsy Woods",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 3,
+                        department: "3A",
                         subordinates: [],
                      },
                      {
@@ -246,7 +246,7 @@ export const companiesData = {
                         employeeName: "Flora Lynch",
                         position: "DRIVER",
                         other: null,
-                        department: 3,
+                        department: "3A",
                         subordinates: [],
                      },
                      {
@@ -255,7 +255,7 @@ export const companiesData = {
                         employeeName: "Niamh Small",
                         position: "DRIVER",
                         other: null,
-                        department: 3,
+                        department: "3A",
                         subordinates: [],
                      },
                   ],
@@ -266,7 +266,7 @@ export const companiesData = {
                   employeeName: "Catherine Pierce",
                   position: "CAPTAIN",
                   other: null,
-                  department: 3,
+                  department: "3B",
                   subordinates: [
                      {
                         employeeId: 1043,
@@ -274,7 +274,7 @@ export const companiesData = {
                         employeeName: "Niamh Small",
                         position: "DRIVER",
                         other: null,
-                        department: 3,
+                        department: "3B",
                         subordinates: [],
                      },
                   ],
@@ -295,7 +295,7 @@ export const companiesData = {
                   employeeName: "Gladys Montoya",
                   position: "CAPTAIN",
                   other: null,
-                  department: 4,
+                  department: "4A",
                   subordinates: [
                      {
                         employeeId: 1072,
@@ -303,7 +303,7 @@ export const companiesData = {
                         employeeName: "Wilma Sanchez",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 4,
+                        department: "4A",
                         subordinates: [],
                      },
                      {
@@ -312,7 +312,7 @@ export const companiesData = {
                         employeeName: "Athena Yang",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 4,
+                        department: "4A",
                         subordinates: [],
                      },
                      {
@@ -321,7 +321,7 @@ export const companiesData = {
                         employeeName: "Subhan Krueger",
                         position: "FIREFIGHTER",
                         other: null,
-                        department: 4,
+                        department: "4A",
                         subordinates: [],
                      },
                      {
@@ -330,13 +330,114 @@ export const companiesData = {
                         employeeName: "Ayrton Morales",
                         position: "DRIVER",
                         other: null,
-                        department: 4,
+                        department: "4A",
                         subordinates: [],
                      },
                   ],
                },
+               {
+                  employeeId: 1032,
+                  employeeColor: "purple",
+                  employeeName: "Priya Mullins",
+                  position: "CAPTAIN",
+                  other: null,
+                  department: "4B",
+                  subordinates: [
+                     {
+                        employeeId: 1045,
+                        employeeColor: "green",
+                        employeeName: "Adelaide Stein",
+                        position: "FIREFIGHTER",
+                        other: null,
+                        department: "4B",
+                        subordinates: [],
+                     },
+                     {
+                        employeeId: 1054,
+                        employeeColor: "purple",
+                        employeeName: "Hector Mata",
+                        position: "FIREFIGHTER",
+                        other: null,
+                        department: "4B",
+                        subordinates: [],
+                     },
+                     {
+                        employeeId: 1098,
+                        employeeColor: "purple",
+                        employeeName: "Elissa Craig",
+                        position: "FIREFIGHTER",
+                        other: null,
+                        department: 5,
+                        subordinates: [],
+                     },
+                     {
+                        employeeId: 1033,
+                        employeeColor: "purple",
+                        employeeName: "Nathan Sears",
+                        position: "DRIVER",
+                        other: null,
+                        department: "4B",
+                        subordinates: [],
+                     },
+                     {
+                        employeeId: 1076,
+                        employeeColor: "green",
+                        employeeName: "Dewi Stephenson",
+                        position: "DRIVER",
+                        other: null,
+                        department: "4B",
+                        subordinates: [],
+                     },
+                     {
+                        employeeId: 1087,
+                        employeeColor: "green",
+                        employeeName: "Celeste Hampton",
+                        position: "DRIVER",
+                        other: null,
+                        department: "4B",
+                        subordinates: [],
+                     },
+                  ],
+               }, 
+               {
+                  employeeId: 1065,
+                  employeeColor: "purple",
+                  employeeName: "Rabia Wang",
+                  position: "CAPTAIN",
+                  other: null,
+                  department: "4C",
+                  subordinates: [
+                      {
+                        employeeId: 1040,
+                        employeeColor: "yellow",
+                        employeeName: "Chris Santiago",
+                        position: "FIREFIGHTER",
+                        other: null,
+                        department: "4C",
+                        subordinates: [],
+                     },
+                       {
+                        employeeId: 1047,
+                        employeeColor: "yellow",
+                        employeeName: "Stephen Mitchell",
+                        position: "DRIVER",
+                        other: null,
+                        department: "4C",
+                        subordinates: [],
+                     },
+                        {
+                        employeeId: 1049,
+                        employeeColor: "yellow",
+                        employeeName: "Samantha Cameron",
+                        position: "DRIVER",
+                        other: null,
+                        department: "4C",
+                        subordinates: [],
+                     },
             ],
          },
       ],
    },
+]
+   }
 };
