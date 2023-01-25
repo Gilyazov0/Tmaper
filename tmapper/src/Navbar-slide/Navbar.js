@@ -3,7 +3,9 @@ import hamburger from "./list.png";
 import "./Navbar.css";
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
-
+import phone from "./phone.png";
+import user from "./user.png";
+import home from "./home.png";
 
 function Menu() {
 
@@ -25,11 +27,22 @@ function Menu() {
                             isOpen ? 'is-open' : 'is-closed'
                         }`
                 }>
-
                     <Nav className="link-name" navbar>
-                        <Link to="/" className="nav-link-home">Home</Link>
-                        <Link to="/employee" className="nav-link-employee">Employee Profil</Link>
-                        <Link to="/contact" className="nav-link-contact">Contact</Link>
+                            <img src={home}
+                                alt="home"
+                                className="home"/>
+                            <Link to="/" className="nav-link-home">Home</Link>
+                            <img src={user}
+                                alt="user"
+                                className="user"/>
+                            <Link to="/employee" className="nav-link-employee">
+                                Employee Profile </Link>
+                            <img src={phone}
+                                alt="phone"
+                                className="icon"/>
+                            <Link to="/contact" className="nav-link-contact">
+                                Contact
+                            </Link>
                     </Nav>
                 </Navbar>
                 <div className={
@@ -46,5 +59,4 @@ function Menu() {
         </BrowserRouter>
     );
 }
-
 export default Menu;

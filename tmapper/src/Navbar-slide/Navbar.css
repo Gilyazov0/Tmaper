@@ -4,7 +4,7 @@
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: #2479F6;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -22,25 +22,34 @@
 }
 
 .nav-link-home {
-    color: #000;
+    color: #7ABAFF;
     text-decoration: none;
-    margin-right: 10px;
-    margin-top: 4rem;
-    position: fixed;
+    position: absolute;
+    top: 74px;
+}
+.home{
+    top: 74px;
+    left: 56px;
+    position: absolute;
+    width: 1.5rem;
 }
 .nav-link-employee {
-    color: #000;
+    color: #7ABAFF;
     text-decoration: none;
-    margin-right: 10px;
-    margin-top: 7rem;
-    position: fixed;
-
+    top: 9rem;
+    position: absolute;
+}
+.user{
+    width: 1.5rem;
+    left: 30px;
+    top: 9rem;
+    position: absolute;
 }
 .nav-link-contact {
-    color: #000;
+    color: #7ABAFF;
     text-decoration: none;
-    margin-right: 10px;
-    margin-top: 32rem;
+    position: absolute;
+    top: 30rem;
 }
 .content {
     margin-left: 250px;
@@ -50,15 +59,29 @@
 .content.is-open {
     margin-left: 0;
 }
-.navbar-nav{
+ .navbar-nav{
     display: flex;
     align-items: center;
     margin: auto;
-    flex-direction: column!important;
 }
 .navbar.is-closed {
     transform: translateX(-250px);
 }
 .content.is-closed {
     margin-left: 0;
+}
+.nav-link-contact:hover{
+    color: #282C34;
+}
+.nav-link-home:hover{
+    color: #282C34;
+}
+.nav-link-employee:hover{
+    color: #282C34;
+}
+.icon{
+    width: 1.5rem;
+    left: 63px;
+    position: absolute;
+    top: 30rem;
 }
