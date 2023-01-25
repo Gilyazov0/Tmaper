@@ -1,19 +1,38 @@
+import { useState } from "react";
 import "../style/person.css";
+import ProfileModal from "./ProfileModal";
 
-const Person = ({ data, setData }) => {
+const Person = ({ data, setData, clustersNum }) => {
+  const [showProfile, setShowProfile] = useState(false);
   function handleClick() {
     if (data.subordinates && data.subordinates.length > 0) setData(data);
   }
-  console.log(data);
+  const profileData = {
+    employeeName: data.employeeName,
+    position: data.position,
+    department: data.department,
+    employeeColor: data.employeeColor,
+  };
+
   return (
-    <div
-      className="node"
-      onClick={handleClick}
-      style={{ borderColor: data.employeeColor }}
-    >
-      <div className="position">{`${data.position}`}</div>
-      <div>{`${data.employeeName}`}</div>
-    </div>
+    <>
+      {showProfile && (
+        <ProfileModal
+          show={showProfile}
+          setShow={setShowProfile}
+          profileData={profileData}
+        />
+      )}
+      <div className="node" style={{ borderColor: data.employeeColor }}>
+        <div className="pointer noselect" onClick={handleClick}>
+          {`${data.position}`}
+        </div>
+        <div
+          className="pointer noselect"
+          onClick={() => setShowProfile(true)}
+        >{`${data.employeeName}`}</div>
+      </div>
+    </>
   );
 };
 

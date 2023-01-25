@@ -1,20 +1,29 @@
 function getColor(color) {
   switch (color) {
     case 0:
-      return "red";
+      return "#fb8500";
     case 1:
-      return "blue";
+      return "#6a4c93";
     case 2:
-      return "green";
+      return "#e63946";
+    case 3:
+      return "#219ebc";
+    case 4:
+      return "#8ecae6";
+    case 5:
+      return "#588157";
     default:
-      return "yellow";
+      return "black";
   }
 }
 
 export default function addColors(structure, colors) {
-  const color = colors[structure.employeeId] ? colors[structure.employeeId] : 1;
-  //   structure.employeeColor = getColor(color);
+  const color =
+    colors[structure.employeeId] !== undefined
+      ? colors[structure.employeeId]
+      : 10;
+  structure.employeeColor = getColor(color);
   for (const person of structure.subordinates) {
-    addColors(person, color);
+    addColors(person, colors);
   }
 }
