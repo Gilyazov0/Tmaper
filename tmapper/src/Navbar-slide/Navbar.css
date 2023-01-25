@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 230px;
     height: 100%;
     background-color: #2479F6;
     transition: transform 0.3s ease-in-out;
@@ -32,7 +32,7 @@
     top: 74px;
     left: 56px;
     position: absolute;
-    width: 1.5rem;
+    width: 1.4rem;
 }
 .nav-link-employee {
     color: #7ABAFF;
@@ -44,6 +44,12 @@
     width: 1.5rem;
     left: 3.5rem;
     top: 9rem;
+    position: absolute;
+}
+.nav-link-company{
+    color: #7ABAFF;
+    text-decoration: none;
+    top: 12.5rem;
     position: absolute;
 }
 .nav-link-contact {
@@ -85,4 +91,10 @@
     left: 63px;
     position: absolute;
     top: 30rem;
+}
+.company{
+    width: 1.5rem;
+    left: 56px;
+    position: absolute;
+    top: 12.5rem;
 }
