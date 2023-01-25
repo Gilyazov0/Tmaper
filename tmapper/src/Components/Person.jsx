@@ -7,7 +7,7 @@ const Person = ({ data, setData }) => {
 
   return (
     <div className="node" onClick={handleClick}>
-      {data.name}
+      {data.employeeName}
     </div>
   );
 };

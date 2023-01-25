@@ -1,3 +1,11 @@
-.person {
-  border: solid 2px black;
+.node {
+  padding: 5px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.backImg {
+  position: absolute;
+  z-index: 10;
 }

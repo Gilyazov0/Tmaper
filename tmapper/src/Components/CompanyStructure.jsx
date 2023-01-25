@@ -1,50 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Tree } from "react-organizational-chart";
+import getCompanyData from "../connection/GetCompanyData";
 import Node from "./Node";
-const mockData = {
-  id: "some id",
-  color: "color that represent culture",
-  name: "name0",
-  position: "position",
-
-  subordinates: [
-    {
-      id: "some id",
-      color: "color that represent culture",
-      name: "name1",
-      position: "position",
-      subordinates: [
-        {
-          id: "some id",
-          color: "color that represent culture",
-          name: "name2",
-          position: "position",
-        },
-        {
-          id: "some id",
-          color: "color that represent culture",
-          name: "name3",
-          position: "position",
-        },
-      ],
-    },
-  ],
-};
 
 const CompanyStructure = () => {
   const [data, setData] = useState();
-  useEffect(() => {
-    setData(mockData);
+  const getCompanyStructure = useCallback(async () => {
+    const data = await getCompanyData();
+    setData(data.structure);
+    return;
   }, []);
+
+  useEffect(() => {
+    getCompanyStructure();
+  }, [getCompanyStructure]);
+
+  function resetData() {
+    getCompanyStructure();
+  }
 
   return (
     <>
+      <img
+        src={`${process.env.PUBLIC_URL}/back.svg `}
+        alt="back"
+        onClick={() => resetData()}
+        className="backImg"
+      />
       {data && (
         <Tree
           lineWidth={"2px"}
-          lineColor={"green"}
+          lineColor={"black"}
           lineBorderRadius={"10px"}
-          label={<div className="node">{`${data.name}`}</div>}
+          label={<div className="node">{`${data.employeeName}`}</div>}
         >
           {data.subordinates &&
             data.subordinates.map((v, i) => (

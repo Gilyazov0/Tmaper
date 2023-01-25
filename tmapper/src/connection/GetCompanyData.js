@@ -1,9 +1,6 @@
-import CompaniesData from "./CompaniesDB"; 
+import CompaniesData from "./CompaniesDB";
 
-
-
-export default async function getCompanyData(companyId =1 ) {
-
-     
-     return CompaniesData
+export default async function getCompanyData(companyId = 1) {
+  console.log(CompaniesData);
+  return CompaniesData;
 }
