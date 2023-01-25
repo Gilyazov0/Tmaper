@@ -1,0 +1,15 @@
+*{
+background-color: #1e1e2f;
+color: white;
+}
+
+.item {
+    width: 10em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
