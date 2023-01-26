@@ -6,11 +6,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Survey from "./Components/Survey";
 import FormContextProvider from "./Components/FormContext";
 import { ToastContainer } from "react-toastify";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" style={{ backgroundColor: "#A2D4F2" }}>
         <Navbar />
 
         <ToastContainer></ToastContainer>
@@ -20,11 +21,18 @@ function App() {
             path="/form"
             element={
               <FormContextProvider>
-                <Survey />
+                <div
+                  style={{
+                    border: "1px solid rgba(0, 0, 0, 0.679",
+                  }}
+                >
+                  <Survey />
+                </div>
               </FormContextProvider>
             }
           ></Route>
           <Route path="/company" element={<CompanyStructure />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

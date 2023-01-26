@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
 import Form from "react-bootstrap/Form";
@@ -13,7 +13,9 @@ function Survey() {
   return (
     <div className="survey-form mx-auto my-5">
       <Form>
-        <h3 className="border-bottom border-secondary pb-2">Please complete the below survey</h3>
+        <h3 className="border-bottom border-secondary pb-2">
+          Please complete the below survey
+        </h3>
         <Form.Group className="mb-3">
           <Form.Label>
             Identify at least 5 people at work to whom you feel connected

@@ -3,7 +3,11 @@ import Dropdown from "react-bootstrap/Dropdown";
 function ClustersSelector({ clustersNum, setClustersNum }) {
   return (
     <Dropdown className="me-2">
-      <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+      <Dropdown.Toggle
+        variant="secondary"
+        id="dropdown-basic"
+        style={{ backgroundColor: "black" }}
+      >
         Select number of clusters
       </Dropdown.Toggle>
 

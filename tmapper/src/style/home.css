@@ -1,0 +1,61 @@
+.background-home {
+  background-color: rgba(0, 0, 0, 0.679);
+  color: white;
+}
+
+.html,
+.body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.textPresentation {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 22px;
+  font-family: serif;
+  text-align: justify;
+}
+
+.cardWrapper {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.classe {
+  width: 100%;
+  height: 400px;
+}
+
+.card1 {
+  width: 100px;
+  margin: auto;
+}
+.card2 {
+  width: 100px;
+  margin: auto;
+}
+.card3 {
+  width: 100px;
+  margin: auto;
+}
+.h1 {
+  text-align: center;
+}
+.header {
+  text-align: center;
+}
+
+.cardText {
+  text-align: justify;
+}
+.cardTitle {
+  text-align: center;
+}
+
+.homeLogo {
+  border-radius: 50%;
+}

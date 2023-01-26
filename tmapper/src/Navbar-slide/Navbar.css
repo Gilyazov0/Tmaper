@@ -12,16 +12,18 @@ body {
   width: 250px;
   height: 100vh;
   background-color: #2084f7;
+  background: -webkit-linear-gradient(to right bottom, #2084f7);
+  background: linear-gradient(to right bottom, #368abf, #68c6fc);
   transition: transform 0.3s ease-in-out;
   z-index: 20;
 }
 
 .hamburger {
-  top: 1rem;
+  margin-top: 20px;
   left: 40px;
   cursor: pointer;
   height: 2.5rem;
-  position: relative;
+  position: fixed;
   z-index: 10000;
 }
 
@@ -144,10 +146,16 @@ body {
 }
 
 .nav-label {
-  color: #7abaff;
+  color: #000000;
+  font-weight: bold;
   text-decoration: none;
-  margin-left: 1rem;
+  margin: 10px;
 }
 .nav-label:hover {
-  color: #282c34;
+  color: rgb(53, 52, 52);
+  text-decoration: underline;
+}
+.change-color {
+  filter: invert(40%) sepia(22%) saturate(7498%) hue-rotate(200deg)
+    brightness(105%) contrast(94%);
 }

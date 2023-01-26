@@ -13,13 +13,12 @@ function Menu() {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div>
       <img
         src={hamburger}
         alt="hamburger"
-        className="hamburger"
+        className={isOpen ? "hamburger" : "hamburger change-color"}
         onClick={toggleNavbar}
       />
 
