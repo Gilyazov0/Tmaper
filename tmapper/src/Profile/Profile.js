@@ -15,6 +15,14 @@ import "./Profile.css";
 export default function PersonalProfile({ profileData }) {
   const { employeeName, position, department, employeeColor } = profileData;
 
+  const colorDict = {
+    "#fb8500": "orange",
+    "#6a4c93": "purple",
+    "#e63946": "red",
+    "#219ebc": "blue",
+    "#ffea00": "yellow",
+    "#588157": "green",
+  };
   return (
     <section>
       <MDBContainer className="py-5 h-100" style={{ width: "600px" }}>
@@ -38,7 +46,7 @@ export default function PersonalProfile({ profileData }) {
                     fluid
                   />
                   <MDBTypography tag="h5">{employeeName}</MDBTypography>
-                  <MDBCardText>Web Designer</MDBCardText>
+                  <MDBCardText>{position}</MDBCardText>
                   <MDBIcon far icon="edit mb-5" />
                 </MDBCol>
                 <MDBCol md="8">
@@ -56,8 +64,13 @@ export default function PersonalProfile({ profileData }) {
 
                     <MDBRow className="pt-1">
                       <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Color</MDBTypography>
-                        <MDBCardText className="text-muted">Red</MDBCardText>
+                        <MDBTypography tag="h6">Culture color:</MDBTypography>
+                        <MDBCardText className="text-muted">
+                          {colorDict[employeeColor]}
+                        </MDBCardText>
+                        <MDBCardText className="text-muted">
+                          Color explanation will be here :)
+                        </MDBCardText>
                       </MDBCol>
                     </MDBRow>
                   </MDBCardBody>

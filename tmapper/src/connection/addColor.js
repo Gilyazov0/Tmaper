@@ -9,7 +9,7 @@ function getColor(color) {
     case 3:
       return "#219ebc";
     case 4:
-      return "#8ecae6";
+      return "#ffea00";
     case 5:
       return "#588157";
     default:

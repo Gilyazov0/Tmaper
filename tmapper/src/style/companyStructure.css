@@ -1,5 +1,8 @@
 .structure {
   width: fit-content;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .backImg {
