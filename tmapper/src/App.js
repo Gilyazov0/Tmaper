@@ -5,7 +5,7 @@ import Navbar from "./Navbar-slide/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Survey from "./Components/Survey";
 import FormContextProvider from "./Components/FormContext";
-import { ToastContainer } from "react-toastify";
+// import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <div>
           <CompanyStructure />
         </div>
-        <ToastContainer></ToastContainer>
+        {/* <ToastContainer></ToastContainer> */}
 
         <Routes>
           <Route

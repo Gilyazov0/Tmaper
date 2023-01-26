@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import hamburger from "./list.png";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import phone from "./phone.png";
 import user from "./user.png";
 import home from "./home.png";
 import company from "./company.png";
+import "./Navbar.css";
 
 function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,29 +26,44 @@ function Menu() {
       <Navbar
         expand="md"
         className={`navbar ${isOpen ? "is-open" : "is-closed"}`}
+        style={{ position: "fixed" }}
       >
-        <Nav className="link-name" navbar>
-          <img src={home} alt="home" className="home" />
-          <Link as={Link} to="/" className="nav-link-home">
-            Home
-          </Link>
-          <img src={user} alt="user" className="user" />
-          <Link as={Link} to="/profile" className="nav-link-employee">
-            Employee Profile{" "}
-          </Link>
-          <img src={company} alt="company" className="company" />
+        <Nav className="link-name">
+          <div className="nav-link-home">
+            <img src={home} alt="home" className="nav-icon" />
+            <Link as={Link} to="/" className="nav-label">
+              Home
+            </Link>
+          </div>
 
-          <Link as={Link} to="/company" className="nav-link-company">
-            Company Structure{" "}
-          </Link>
+          <div className="nav-link-user">
+            <img src={user} alt="user" className="nav-icon" />
+            <Link as={Link} to="/profile" className="nav-label">
+              Employee Profile
+            </Link>
+          </div>
 
-          <img src={phone} alt="phone" className="icon" />
+          <div className="nav-link-company">
+            <img src={company} alt="company" className="nav-icon" />
+            <Link as={Link} to="/company" className="nav-label">
+              Company Structure
+            </Link>
+          </div>
+
+          <div className="nav-link-contact">
+            <img src={phone} alt="phone" className="nav-icon" />
+            <Link as={Link} to="/contact" className="nav-label">
+              Contact
+            </Link>
+          </div>
+
+          {/* <img src={phone} alt="phone" className="icon" />
           <Link as={Link} to="/contact" className="nav-link-contact">
             Contact
-          </Link>
+          </Link> */}
         </Nav>
       </Navbar>
-      <div className={`content ${isOpen ? "is-open" : "is-closed"}`}></div>
+      {/* <div className={`content ${isOpen ? "is-open" : "is-closed"}`}></div> */}
     </div>
   );
 }
