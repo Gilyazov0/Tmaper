@@ -17,10 +17,10 @@ export default function PersonalProfile({ profileData }) {
 
   return (
     <section>
-      <MDBContainer className="py-5 h-100" style={{ width: "600px" }}>
+      <MDBContainer>
         <MDBRow className="justify-content-center align-items-center h-100">
-          <MDBCol lg="6" className="mb-4 mb-lg-0">
-            <MDBCard className="mb-3" style={{ borderRadius: ".5rem" }}>
+          <MDBCol style={{width: "inherit"}}>
+            <MDBCard style={{ borderRadius: ".5rem" }}>
               <MDBRow className="g-0">
                 <MDBCol
                   md="4"
@@ -31,14 +31,14 @@ export default function PersonalProfile({ profileData }) {
                   }}
                 >
                   <MDBCardImage
-                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                    src={require("../images/user-avatar.png")}
                     alt="Avatar"
                     className="my-5"
-                    style={{ width: "80px" }}
+                    style={{ width: "80px", borderRadius: "50%" }}
                     fluid
                   />
-                  <MDBTypography tag="h5">{employeeName}</MDBTypography>
-                  <MDBCardText>Web Designer</MDBCardText>
+                  <MDBTypography tag="h5" style={{color:"black"}}>{employeeName}</MDBTypography>
+                  <MDBCardText style={{color:"black"}}>Web Designer</MDBCardText>
                   <MDBIcon far icon="edit mb-5" />
                 </MDBCol>
                 <MDBCol md="8">
