@@ -144,6 +144,13 @@ body {
   display: flex;
   align-items: center;
 }
+.nav-link-cluster {
+  position: absolute;
+  top: 254px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+}
 
 .nav-label {
   color: #000000;

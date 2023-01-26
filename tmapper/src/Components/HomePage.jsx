@@ -38,10 +38,10 @@ const HomePage = () => {
         <div className="textPresentation">
           Don't know your colleagues well? Ask us! We work in leading reviews of
           representatives' very own data and utilizing the corporate culture
-          information to make a proper organisational design. By examining the
+          information to make a proper organizational design. By examining the
           qualities and traits of every worker, we can outline the connections
           and associations inside your team. We likewise comprehend the
-          different character types inside the organisation, which permits us to
+          different character types inside the organization, which permits us to
           have a superior comprehension of communication styles. This data is
           very important for organizations hoping to enhance change management,
           work on generally execution and include a viable communication inside
@@ -85,7 +85,7 @@ const HomePage = () => {
             <Card.Text className="cardText">
               Understanding different characters' types inside the team to
               further develop communication and managements styles. Splitting
-              the population into cultural groups, similar in their behaviour,
+              the population into cultural groups, similar in their behavior,
               where the number of groups is upon on your choice.
             </Card.Text>
           </Card.Body>

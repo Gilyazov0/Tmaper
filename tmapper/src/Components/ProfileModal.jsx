@@ -6,7 +6,7 @@ const ProfileModal = ({ show, setShow, profileData }) => {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose} dialogClassName="modal-50w">
+      <Modal show={show} onHide={handleClose} dialogClassName="modal-25w">
         <Modal.Body>
           <Profile profileData={profileData} />
         </Modal.Body>

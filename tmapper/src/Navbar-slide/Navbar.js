@@ -6,6 +6,7 @@ import phone from "./phone.png";
 import user from "./user.png";
 import home from "./home.png";
 import company from "./company.png";
+import ccluster from "./show-graph.png";
 import "./Navbar.css";
 
 function Menu() {
@@ -46,6 +47,12 @@ function Menu() {
             <img src={company} alt="company" className="nav-icon" />
             <Link as={Link} to="/company" className="nav-label">
               Company Structure
+            </Link>
+          </div>
+          <div className="nav-link-cluster">
+            <img src={ccluster} alt="company clusters" className="nav-icon" />
+            <Link as={Link} to="/clusters" className="nav-label">
+              Company Clusters
             </Link>
           </div>
 

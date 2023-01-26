@@ -7,6 +7,7 @@ import Survey from "./Components/Survey";
 import FormContextProvider from "./Components/FormContext";
 import { ToastContainer } from "react-toastify";
 import HomePage from "./Components/HomePage";
+import ClusteringPage from "../src/Components/ClusteringPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           ></Route>
           <Route path="/company" element={<CompanyStructure />}></Route>
           <Route path="/" element={<HomePage />}></Route>
+          <Route path="/clusters" element={<ClusteringPage />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
