@@ -1,13 +1,15 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
-
+import Profile from "../Profile/Profile";
 const ProfileModal = ({ show, setShow, profileData }) => {
   const handleClose = () => setShow(false);
 
   return (
     <>
       <Modal show={show} onHide={handleClose}>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <Profile profileData={profileData} />
+        </Modal.Body>
       </Modal>
     </>
   );

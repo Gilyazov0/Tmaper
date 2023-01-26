@@ -38,8 +38,8 @@ function Menu() {
 
           <div className="nav-link-user">
             <img src={user} alt="user" className="nav-icon" />
-            <Link as={Link} to="/profile" className="nav-label">
-              Employee Profile
+            <Link as={Link} to="/form" className="nav-label">
+              Survey
             </Link>
           </div>
 
@@ -56,14 +56,8 @@ function Menu() {
               Contact
             </Link>
           </div>
-
-          {/* <img src={phone} alt="phone" className="icon" />
-          <Link as={Link} to="/contact" className="nav-link-contact">
-            Contact
-          </Link> */}
         </Nav>
       </Navbar>
-      {/* <div className={`content ${isOpen ? "is-open" : "is-closed"}`}></div> */}
     </div>
   );
 }

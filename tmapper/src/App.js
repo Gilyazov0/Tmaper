@@ -5,17 +5,15 @@ import Navbar from "./Navbar-slide/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Survey from "./Components/Survey";
 import FormContextProvider from "./Components/FormContext";
-// import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <div>
-          <CompanyStructure />
-        </div>
-        {/* <ToastContainer></ToastContainer> */}
+
+        <ToastContainer></ToastContainer>
 
         <Routes>
           <Route
@@ -26,6 +24,7 @@ function App() {
               </FormContextProvider>
             }
           ></Route>
+          <Route path="/company" element={<CompanyStructure />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
